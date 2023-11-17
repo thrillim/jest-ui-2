@@ -28,21 +28,21 @@ const TopNewsPage = () => {
         })
         .catch(error => {
           // Handle the error
-          console.log(error)
+          // console.log(error)
         });
     };
     fetchArticles();
   }, []);
 
   return (
-    <div>
-      <h1>Top News</h1>
-      <div className="article-grid">
+    <div className="bg-white p-5 w-screen min-h-screen h-full font-serif">
+      <h1 className="text-5xl bg-white bold text-center py-5">Top News</h1>
+      <div className="article-grid grid grid-cols-2 gap-5">
         {articles.map((article) => (
-          <div key={article.article_id} className="article py-2">
-            <h2 className="text-xl">{article.title}</h2>
+          <div key={article.article_id} className="article py-2 bg-white">
+            <h2 className="text-xl bold">{article.title}</h2>
             <p>{article.description}</p>
-            <a href={article.link}>Read More</a>
+            <a href={article.link} className="text-sm text-sky-500 underline-offset-2">Read More</a>
           </div>
         ))}
       </div>

@@ -11,7 +11,7 @@ describe('Dashboard', () => {
     // approach 2
     render(<Dashboard />);
     const dashboard = screen.getByTestId('dashboard');
-    expect(dashboard).toHaveClass('blue');
+    expect(dashboard).toHaveClass('text-sky-500');
     expect(dashboard).toHaveTextContent('Dashboard');
   });
 });

@@ -7,10 +7,12 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "jest --watch --config ./jest.config.js",
+    "test": "jest --config ./jest.config.js",
     "coverage": "jest --coverage --config ./jest.config.js"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.17",
+    "@heroicons/react": "^2.0.18",
     "jest-fetch-mock": "^3.0.3",
     "next": "14.0.2",
     "react": "^18",
